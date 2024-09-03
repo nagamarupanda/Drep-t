@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "ながまる SASA",
+    "motivations": "高校生の時から、カルダノについての知識を学び、深め、情報発信を行っているので、この知識や経験を活かし、人生を変えてくれたカルダノに貢献したいです。",
+    "objectives": "カルダノの理念を尊重しつつ、長期的にカルダノが成長し、ホルダーに好影響のある提案に賛成し、カルダノの理念を尊重できていないと感じる提案には反対票を投じます。",
+    "paymentAddress": "addr1q9nsyetynk59glhxly4mcqzkm6c9xcx8tuk6pexv5vq5yn2vu5wf0y7gfz53rdw462xjr3pt0xxe67zjzcly304qhgmqd9ldyc",
+    "qualifications": "SPO, Intersect member",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://x.com/nagamaru_panda"
+      },
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://www.youtube.com/@sasastakepool/videos"
+      }
+    ]
+  }
+}
